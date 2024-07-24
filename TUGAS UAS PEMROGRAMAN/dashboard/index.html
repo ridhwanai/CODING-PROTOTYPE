@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Dosen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form action="/login/index.html">
+        <div class="header">
+            <img src="logo.png" alt="University Logo">
+            <h1>UNIVERSITAS</h1>
+            <button class="logout">LOGOUT</button>
+        </div>
+    </form>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Nama Dosen</h2>
+            <p>NIM Dosen</p>
+            <button class="btn profile-btn">LIHAT PROFIL</button>
+            <button class="btn profile-btn">FOTO PROFIL</button>
+        </div>
+        <a href="/dashboard/index.html"><i class="fa-solid fa-house"></i> DASHBOARD</a>
+        <a href="#infokuliah"><i class="fa-solid fa-circle-info"></i> INFO KULIAH</a>
+        <a href="#ujian"><i class="fa-solid fa-gavel"></i> UJIAN</a>
+        <a href="/tambahdata/index.html"><i class="fa-regular fa-clipboard"></i> TAMBAH DATA</a>
+        <a href="/rekapitulasinilai/index.html"><i class="fa-solid fa-square-poll-vertical"></i> REKAPITULASI NILAI</a>
+    </div>
+    <div class="main-content">
+        <h2>DASHBOARD DOSEN</h2>
+        <div class="semester-info">
+            <h3>Semester - Genap TA. 2024/2025</h3>
+        </div>
+        <div class="card-row">
+            <div class="card">
+                <div class="card-header aqua">
+                    <h3>QR Dosen</h3>
+                </div>
+                <div class="card-content">
+                    <img src="qr-code.png" alt="QR Code">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header blue">
+                    <h3>Tambah Data</h3>
+                </div>
+                <form action="/tambahdata/index.html">
+                    <div class="card-content">
+                        <p>Ini adalah form tambah data</p>
+                        <button class="btn">Selengkapnya</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card">
+                <div class="card-header aqua">
+                    <h3>Rekapitulasi Nilai</h3>
+                </div>
+                <form action="/rekapitulasinilai/index.html">
+                    <div class="card-content">
+                        <p>Ini adalah form rekapitulasi nilai</p>
+                        <button class="btn">Selengkapnya</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

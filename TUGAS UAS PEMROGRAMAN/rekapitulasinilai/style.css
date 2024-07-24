@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+.header {
+    background-color: #3295ff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.logout {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-right: 52px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    top: 47px; /* Adjusted to make space for the fixed header */
+    z-index: 999;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar .profile h2, .sidebar .profile p {
+    margin: 10px 0;
+}
+
+.sidebar .profile .btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #126570;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 70px 20px 20px 20px; /* Added top padding to make space for the fixed header */
+}
+
+.main-content h2 {
+    color: gray;
+}
+
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #3295ff;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}

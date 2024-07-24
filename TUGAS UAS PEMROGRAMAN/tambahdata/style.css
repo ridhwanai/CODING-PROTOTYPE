@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c9d6ff;
+    background: linear-gradient(to rigth, #e2e2e2, #c9d6ff);
+}
+
+.header {
+    background-color: #3295ff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.logout {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-right: 35px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    top: 47px; /* Adjusted to make space for the fixed header */
+    z-index: 999;
+}
+
+.sidebar .profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar .profile h2, .sidebar .profile p {
+    margin: 10px 0;
+}
+
+.sidebar .profile .btn {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #126570;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 70px 20px 20px 20px; /* Added top padding to make space for the fixed header */
+}
+
+.main-content h2 {
+    color: gray;
+}
+
+.form-container {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-header {
+    background-color: #3295ff;
+    padding: 1px;
+    color: white;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.form-content {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: #333;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+    color: white;
+}
